@@ -1,5 +1,5 @@
 ---
-name: wecom
+name: macos-wecom
 description: 在 macOS 上安装 OpenClaw 并配置企业微信长连接集成
 ---
 

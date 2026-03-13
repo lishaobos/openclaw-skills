@@ -1,5 +1,5 @@
 ---
-name: feishu
+name: windows-feishu
 description: 在 Windows 上配置 OpenClaw 飞书集成
 ---
 

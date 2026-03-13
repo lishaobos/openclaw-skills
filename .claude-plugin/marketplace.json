@@ -6,14 +6,9 @@
   "description": "Claude Code skills for installing, configuring and working with OpenClaw across platforms and architectures.",
   "plugins": [
     {
-      "name": "openclaw-macos",
-      "description": "在 macOS 上安装和配置 OpenClaw（含企业微信、钉钉、飞书、QQ 集成）",
-      "source": "./plugins/openclaw-macos"
-    },
-    {
-      "name": "openclaw-windows",
-      "description": "在 Windows (WSL2) 上安装和配置 OpenClaw（含企业微信、钉钉、飞书、QQ 集成）",
-      "source": "./plugins/openclaw-windows"
+      "name": "openclaw-skills",
+      "description": "安装和配置 OpenClaw（支持 macOS/Windows，含企业微信、钉钉、飞书、QQ 集成）",
+      "source": "./plugins/openclaw-skills"
     }
   ]
 }

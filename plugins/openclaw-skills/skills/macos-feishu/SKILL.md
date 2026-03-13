@@ -1,5 +1,5 @@
 ---
-name: feishu
+name: macos-feishu
 description: 在 macOS 上配置 OpenClaw 飞书集成
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: dingtalk
+name: windows-dingtalk
 description: 在 Windows 上配置 OpenClaw 钉钉集成
 ---
 

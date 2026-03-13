@@ -1,5 +1,5 @@
 ---
-name: qq
+name: windows-qq
 description: 在 Windows 上配置 OpenClaw QQ 集成
 ---
 

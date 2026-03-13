@@ -1,5 +1,5 @@
 ---
-name: dingtalk
+name: macos-dingtalk
 description: 在 macOS 上配置 OpenClaw 钉钉集成
 ---
 
