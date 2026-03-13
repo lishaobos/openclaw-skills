@@ -4,19 +4,9 @@
 
 ## 支持矩阵
 
-### 平台安装
-
-| 平台 | 架构 | 状态 |
-|------|------|------|
-| macOS | Intel (x86_64) | Coming Soon |
-| macOS | Apple Silicon (ARM64) | Coming Soon |
-| Windows | WSL2 | Coming Soon |
-
-### 通讯软件集成
-
 | 通讯软件 | macOS | Windows |
 |----------|-------|---------|
-| 企业微信 | Coming Soon | Coming Soon |
+| 企业微信 | ✅ | ✅ |
 | 钉钉 | Coming Soon | Coming Soon |
 | 飞书 | Coming Soon | Coming Soon |
 | QQ | Coming Soon | Coming Soon |
@@ -24,7 +14,7 @@
 ## 环境要求
 
 - **Node.js** >= 22
-- **npm** / pnpm / bun（任选其一）
+- **npm**（用于安装 OpenClaw）
 - Windows 用户需要 **WSL2** 环境
 
 ## 使用方法
@@ -37,23 +27,35 @@
 /plugin marketplace add your-username/openclaw-skills
 ```
 
-### 2. 查看可用插件
+### 2. 安装插件
 
 ```
-/plugin
-```
-
-### 3. 安装插件
-
-```
-# macOS 用户
-/plugin install openclaw-macos
-
-# Windows 用户
-/plugin install openclaw-windows
+/plugin install openclaw-skills
 ```
 
 安装后，Claude Code 将获得对应平台的 OpenClaw 安装与配置能力。
+
+### 3. 使用 Skill
+
+安装插件后，可通过 skill 名称触发对应配置流程，例如：
+
+```
+/skill macos-wecom
+/skill windows-wecom
+```
+
+## 可用 Skills
+
+| Skill 名称 | 说明 |
+|------------|------|
+| `macos-wecom` | macOS 企业微信集成 |
+| `macos-dingtalk` | macOS 钉钉集成 |
+| `macos-feishu` | macOS 飞书集成 |
+| `macos-qq` | macOS QQ 集成 |
+| `windows-wecom` | Windows 企业微信集成 |
+| `windows-dingtalk` | Windows 钉钉集成 |
+| `windows-feishu` | Windows 飞书集成 |
+| `windows-qq` | Windows QQ 集成 |
 
 ## 目录结构
 
@@ -62,20 +64,16 @@ openclaw-skills/
 ├── .claude-plugin/
 │   └── marketplace.json              # Marketplace 注册配置
 ├── plugins/
-│   ├── openclaw-macos/               # macOS 平台
-│   │   └── skills/
-│   │       ├── setup/                # 基础安装与配置
-│   │       ├── wecom/                # 企业微信集成
-│   │       ├── dingtalk/             # 钉钉集成
-│   │       ├── feishu/               # 飞书集成
-│   │       └── qq/                   # QQ 集成
-│   └── openclaw-windows/             # Windows 平台
+│   └── openclaw-skills/
 │       └── skills/
-│           ├── setup/                # 基础安装与配置 (WSL2)
-│           ├── wecom/                # 企业微信集成
-│           ├── dingtalk/             # 钉钉集成
-│           ├── feishu/               # 飞书集成
-│           └── qq/                   # QQ 集成
+│           ├── macos-wecom/          # macOS 企业微信集成
+│           ├── macos-dingtalk/       # macOS 钉钉集成
+│           ├── macos-feishu/         # macOS 飞书集成
+│           ├── macos-qq/             # macOS QQ 集成
+│           ├── windows-wecom/        # Windows 企业微信集成
+│           ├── windows-dingtalk/     # Windows 钉钉集成
+│           ├── windows-feishu/       # Windows 飞书集成
+│           └── windows-qq/           # Windows QQ 集成
 └── README.md
 ```
 
