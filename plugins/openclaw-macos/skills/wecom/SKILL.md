@@ -88,6 +88,19 @@ openclaw plugins install @sunnoy/wecom
 openclaw gateway restart
 ```
 
+## 第八步：启动 Browser
+
+```bash
+openclaw browser start
+```
+
+启动后检查状态：
+```bash
+openclaw browser status
+```
+
+确认 browser 状态正常后继续。
+
 ## 验证
 
 重启完成后，在企业微信中向机器人发送消息，确认能正常收到回复。
